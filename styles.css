@@ -1,0 +1,72 @@
+.parallax
+	{
+	prefers-color-scheme: light;
+	perspective: 1px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	height: 100vh;
+	position: fixed;
+	background-image: url('assets/space.png');
+	background-size: cover;
+	}
+
+.sun		{transform: translateZ(-750px) scale(751);}
+.moon		{transform: translateZ(-250px) scale(251);}
+.earth	{transform: translateZ(-100px) scale(101);}
+.star		{transform: translateZ(-750px) scale(751);}
+.mars		{transform: translateZ(-500px) scale(501);}
+
+.r	{filter: drop-shadow(0em 0em 0.1em rgb(191,0,0));}
+.b	{filter: drop-shadow(0em 0em 0.1em rgb(0,0,191));}
+.w	{filter: drop-shadow(0em 0em 0.05em rgb(255,255,255));}
+
+body
+	{
+	margin: 0%;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	}
+p,h1,h2
+	{
+	position: relative;
+	margin: 2%;
+	line-height: 2;
+	font-family: cambria math;
+	color: white;
+	}
+h1	
+	{
+	text-align: center;
+	font-size: 7.5vw;
+	font-weight: 1000;
+	}
+h2	
+	{
+	text-align: center;
+	font-size: 6vw;
+	font-weight: 1000;
+	}
+p	
+	{
+	text-align: justify;
+	text-justify: inter-word;
+	text-indent: 2em;
+	font-size: 4.5vw;
+	}
+a	{font-weight:1000;}
+
+@media only screen and (min-width: 541px)
+	{
+	h1 {font-size: 250%;}
+	h2 {font-size: 200%;}
+	p {font-size: 150%;}
+	}
+
+@media only screen and (prefers-color-scheme: dark)
+	{
+	p,h1,h2
+		{
+		background-color: transparent;
+		color: white;
+		}
+	}
