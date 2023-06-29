@@ -1,5 +1,7 @@
 .parallax
 	{
+	min-height: 100vh;
+	min-width: 100vw;
 	prefers-color-scheme: light;
 	perspective: 1px;
 	overflow-x: hidden;
