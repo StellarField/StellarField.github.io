@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+	<html style="color:transparent !important; text-shadow:0 0 white !important;" lang="en-US" dm-default-theme="dark" id="site">
+
+	<head>
+
+<title>Nowhere</title>
+<base href="https://stellarfield.net/">
+<link rel="icon" type="image/x-icon" href="res/star.ico">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="404.css">
+<link rel="cononical" href="https://stellarfield.net/">
+<meta charset="UTF-8">
+<meta name="description" content="The Canine Expanse">
+<meta name="keywords" content="Barker, Barks, Kerri Kat, Kerri, Stellar Field, The Canine Expanse, kkatbarker, parallax, parodies, dog jokes, humor, fun traditions, talk about dogs, dogs, ruff, grrr">
+<meta name="author" content="kkatbarker">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="only light">
+<meta name="darkreader-lock" content="true">
+
+	</head>
+
+	<body style="color:transparent !important; text-shadow:0 0 white !important;" id="home">
+
+	<main style="color:transparent !important; text-shadow:0 0 white !important;" id="screen">
+
+	<article style="color:transparent !important; text-shadow:0 0 white !important;" id="page">
+
+	<header>
+
+	<h1 class="mid white">
+
+Dead End
+
+	</h1>
+
+	</header>
+
+<a href="assets/lost.png"><img class="radiant expanse" src="assets/lost.png" title="Are you lost?" alt="Nowhere"></a>
+
+	<footer>
+
+	<p class="mid red">
+
+You is looking in the wrong place, buddy...</p>
+
+	</footer>
+
+	</article>
+
+	</main>
+
+	<script>
+
+var atScroll = document.getElementById("screen");
+if (localStorage.getItem("mark404") !== null)
+	{atScroll.scrollTop = localStorage.getItem("mark404");}
+window.addEventListener("beforeunload", function() {localStorage.setItem("mark404", atScroll.scrollTop);});
+
+var changeBack = new MutationObserver(function(styleChanges)
+	{
+	styleChanges.forEach(function(styleChange)
+		{
+		var element = styleChange.target;
+		var elementStyle = element.style;
+		switch(element.tagName)
+			{
+			case "DIV": case "IMG": case "P": case "H1": case "H2": case "H3": case "A": case "EM": case "SPAN": case "SECTION": case "HEADER": case "FOOTER": case "ARTICLE": case "MAIN": case "BODY": case "HTML":
+				elementStyle.removeProperty("filter");
+				elementStyle.removeProperty("background");
+				elementStyle.removeProperty("background-image");
+			case "IFRAME":
+				elementStyle.removeProperty("background-color");
+				elementStyle.removeProperty("color-scheme");
+				elementStyle.removeProperty("border");
+				elementStyle.removeProperty("box-shadow");
+				elementStyle.removeProperty("color");
+				elementStyle.removeProperty("text-shadow");
+				break;
+			}
+		});
+	});
+
+changeBack.observe(document.getElementById("site"), {attributes:true, subtree:true, attributeFilter:["style"]});
+
+	</script>
+		
+</body>
+
+</html>

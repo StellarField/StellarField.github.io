@@ -1,0 +1,169 @@
+
+
+#site, #home
+	{position:relative !important}
+
+#site, #home, #screen, #page
+	{
+	display:block !important;
+	background-color:transparent !important; 
+	color-scheme:only light !important;
+	font-family:cambria !important;
+	}
+
+#site
+	{
+	width:100vw !important;
+	height:100vh !important;
+	}
+
+#home, #screen, #page
+	{width:100% !important}
+
+#site, #page
+	{background-image:none !important}
+
+#site
+	{
+	border:0 solid white !important;
+	box-shadow:0 0 white !important;
+	}
+
+#home
+	{
+	background-image:url("assets/space.png") !important;
+	background-position:top center !important;
+	background-repeat:repeat !important;
+	margin:0 !important;
+	overflow-y:hidden !important;
+	}
+
+#screen
+	{perspective:1px !important}
+
+#page
+	{
+	position:static !important;
+	float:none !important;
+	z-index:0 !important;
+	}
+
+#site *
+	{color-scheme:only light !important}
+
+#site :is(h1,h2,h3,p,.text,.note,.boundary,.frame,.end)
+	{position:relative !important}
+
+#site :is(iframe,.still,.active)
+	{position:absolute !important}
+
+#site :is(h1,h2,h3,p,iframe,.text,.note,.boundary,.frame,.end,.still,.frame:hover .active)
+	{display:block !important}
+
+#site :is(h1,h2,h3,p,em,span,a,img,iframe,section,header,footer)
+	{background-color:transparent !important}
+
+#site :is(h1,h2,h3,p,em,span,section,header,footer)
+	{
+	color:transparent !important;
+	text-shadow:0 0 white !important; 
+	}
+
+#site :is(h1,h2,h3,p,em,a,span,section,header,footer) {font-family:cambria !important}
+#site :is(h1,h2,h3,p,em,a,span,section,header,footer) {line-height:2 !important}
+#site :is(h1,h2,h3,a)                                 {font-weight:1000 !important}
+
+#site :is(a::selection,.outline)
+	{text-shadow:2px 0 white, 1.93px .52px white, 1.73px 1px white, 1.41px 1.41px white, 1px 1.73px white,.52px 1.93px white, 0 2px white, -.52px 1.93px white, -1px 1.73px white, -1.41px 1.41px white, -1.73px 1px white, -1.93px .52px white, -2px 0 white, -1.93px -.52px white, -1.73px -1px white, -1.41px -1.41px white, -1px -1.73px white, -.52px -1.93px white, 0 -2px white,.52px -1.93px white, 1px -1.73px white, 1.41px -1.41px white, 1.73px -1px white, 1.93px -.52px white !important}
+
+#site a::selection
+	{color:black !important}
+
+#site :not(a)::selection
+	{
+	color:black !important;
+	text-shadow:.5px 0 black, 0.48px .13px black,.43px .25px black,.35px .35px black,.25px .43px black,.13px 0.48px black, 0 .5px black, -.13px 0.48px black, -.25px .43px black, -.35px .35px black, -.43px .25px black, -0.48px .13px black, -.5px 0 black, -0.48px -.13px black, -.43px -.25px black, -.35px -.35px black, -.25px -.43px black, -.13px -0.48px black, 0 -.5px black,.13px -0.48px black,.25px -.43px black,.35px -.35px black,.43px -.25px black, 0.48px -.13px black !important;
+	}
+
+#site a:link
+	{
+	color:blue !important;
+	text-decoration:none !important;
+	}
+
+#site a:visited
+	{
+	color:#bf00ff !important;
+	text-decoration:none !important;
+	}
+
+#site a:active         {color:white !important}
+#site a:hover          {text-decoration:underline !important}
+#site :is(.text,.note) {margin:0 !important}
+
+#site :is(iframe,.full)
+	{
+	width:calc(100% - 24px) !important;
+	height:calc(100% - 24px) !important;
+	}
+
+#site iframe
+	{margin:-1px !important}
+
+#site .frame
+	{border:.2em solid white !important}
+
+#site .frame:not(:hover)
+	.active {display:none !important}
+
+#site .large  {width:50.8% !important}
+#site .medium {width:40% !important}
+#site .small  {width:25% !important}
+#site .tiny   {width:20% !important}
+#site .mini   {width:2em !important}
+
+#site .red
+	{filter:drop-shadow(0em 0em 0.1em red) drop-shadow(0em 0em 0.1em red) drop-shadow(0em 0em 0.1em red) drop-shadow(0em 0em 0.1em red) !important}
+
+#site .white
+	{filter:drop-shadow(0em 0em 0.1em white) drop-shadow(0em 0em 0.1em white) drop-shadow(0em 0em 0.1em black) drop-shadow(0em 0em 0.1em black) !important}
+
+#site .blue
+	{filter:drop-shadow(0em 0em 0.1em #007FFF) drop-shadow(0em 0em 0.1em #007FFF) drop-shadow(0em 0em 0.1em #007FFF) drop-shadow(0em 0em 0.1em #007FFF) !important}
+
+#site .radiant
+	{filter:drop-shadow(0em 0em 0.5em white) !important}
+
+#site :is(.left,.in)
+	{
+	text-align:justify !important;
+	text-justify:inter-word !important;
+	}
+
+#site :is(.left,.mid,.frame)
+	{text-indent:0 !important}
+
+#site .hd     {aspect-ratio:16/9 !important}
+#site .map    {aspect-ratio:16/9.405 !important}
+#site .letter {aspect-ratio:11/8.5 !important}
+#site .space  {white-space:pre-wrap !important}
+#site .mid    {text-align:center !important}
+#site .in     {text-indent:2em !important}
+
+#site img,.boundary
+	{break-inside:avoid !important}
+
+#site .boundary
+	{
+	padding:6.4px 0 !important;
+	width:100% !important;
+	text-indent:0 !important;
+	margin:0 !important;
+	}
+
+#site .frame
+	{
+	margin:auto !important;
+	padding:12px 12px 12px 12px !important;
+	border-radius:12px !important;
+	}

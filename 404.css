@@ -1,0 +1,51 @@
+#home, #screen, #page {height:100% !important}
+#page                 {text-align:center !important}
+
+#site, #site :not(.red):not(.white):not(.blue):not(.radiant)
+	{filter:none !important}
+
+#site h1,p     {margin:0 2% !important}
+#site .expanse {width:auto !important}
+
+@media screen
+	{
+	#home, #screen
+		{overflow-x:hidden !important}
+
+	#screen
+		{
+		position:fixed !important;
+		overflow-y:auto !important;
+		}
+
+	@media (min-width:541px)
+		{
+		#site h1       {font-size:32.4px !important}
+		#site p        {font-size:24.3px !important}
+		#site .expanse {height:clamp(0px, 100% - 145.4px, 161.09215017064846416382252559727dvw) !important}
+		}
+
+	@media (max-width:540px)
+		{
+		#site h1       {font-size:6vw !important}
+		#site p        {font-size:4.5vw !important}
+		#site .expanse {height:clamp(0px, 100% - 21dvw - 32px, 161.09215017064846416382252559727dvw) !important}
+		}
+	}
+
+@media print
+	{
+	#home, #screen
+		{overflow-x:visible !important}
+
+	#screen
+		{
+		position:static !important;
+		overflow-y:visible !important;
+		}
+
+	#site h1       {font-size:3.6vw !important}
+	#site p        {font-size:2.7vw !important}
+
+	#site .expanse {height:clamp(0px, 100dvh - 12.6dvw - 32px, 161.09215017064846416382252559727dvw) !important}
+	}

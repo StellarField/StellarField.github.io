@@ -1,0 +1,63 @@
+#home, #screen, #page
+	{height:100vh !important}
+
+#site, #site :not(p):not(h1):not(h2)
+	{filter:none !important}
+
+#site h1,h2,p
+	{margin:0 2% !important}
+
+#site h2
+	{
+	filter:drop-shadow(0em 0em 0.1em #007FFF) drop-shadow(0em 0em 0.1em #007FFF) drop-shadow(0em 0em 0.1em #007FFF) drop-shadow(0em 0em 0.1em #007FFF) !important;
+	text-decoration:underline !important;
+	font-weight:bold !important;
+	}
+
+#site p:not(.blue)
+	{filter:drop-shadow(0em 0em 0.1em red) drop-shadow(0em 0em 0.1em red) drop-shadow(0em 0em 0.1em red) drop-shadow(0em 0em 0.1em red) !important}
+
+#site p:not(.mid)
+	{
+	text-indent:-2em !important;
+	padding-left:2em !important;
+	}
+
+@media screen
+	{
+	#home, #screen
+		{overflow-x:hidden !important}
+
+	#screen
+		{
+		position:fixed !important;
+		overflow-y:auto !important;
+		}
+
+	@media (min-width:541px)
+		{
+		#site h1        {font-size:32.4px !important}
+		#site :is(h2,p) {font-size:18.225px !important}
+		}
+
+	@media (max-width:540px)
+		{
+		#site h1        {font-size:6vw !important}
+		#site :is(h2,p) {font-size:3.375vw !important}
+		}
+	}
+
+@media print
+	{
+	#home, #screen
+		{overflow-x:visible !important}
+
+	#screen
+		{
+		position:static !important;
+		overflow-y:visible !important;
+		}
+
+	#site h1        {font-size:3.6vw !important}
+	#site :is(h2,p) {font-size:2.025vw !important}
+	}

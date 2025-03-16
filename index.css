@@ -1,0 +1,220 @@
+#home, #screen, #page
+	{height:100vh !important}
+
+#site, #site :not(iframe):not(.red):not(.white):not(.blue):not(.radiant)
+	{filter:none !important}
+
+#site h1,h2,h3,p
+	{margin:2% !important}
+
+#site .hidden
+	{visibility:hidden !important}
+
+#site .object
+	{
+	margin:0 !important;
+	left:0 !important;
+	width:100% !important;
+	height:0 !important;
+	position:relative !important;
+	transform-origin:top left !important;
+	z-index:-1 !important;
+	}
+
+#site .stellar     {background-image:url("assets/star.png") !important}
+#site .planetary   {background-image:url("assets/mars.png") !important}
+#site .solar       {background-image:url("assets/sun.png") !important}
+#site .lunar       {background-image:url("assets/moon.png") !important}
+#site .terrestrial {background-image:url("assets/earth.png") !important}
+
+#site .mass
+	{
+	position:absolute !important;
+	display:block !important;
+	aspect-ratio:1 !important;
+	background-repeat:no-repeat !important;
+	background-size:contain !important;
+	}
+
+@media (min-width:1906px)
+	{#site .scale {width:50.8% !important}}
+
+@media screen
+	{
+	#home, #screen
+		{overflow-x:hidden !important}
+
+	#screen
+		{
+		position:fixed !important;
+		overflow-y:auto !important;
+		}
+
+	#site iframe {visibility:visible !important}
+	#site .cover {visibility:hidden !important}
+
+	@media (min-width:541px)
+		{
+		#site h1           {font-size:40.5px !important}
+		#site :is(h2,h3)   {font-size:32.4px !important}
+		#site :is(p,.text) {font-size:24.3px !important}
+		#site .note        {font-size:18.225px !important}
+
+		@media (max-width:1905px)
+			{#site .scale {width:calc(205.74px + 40%) !important}}
+		}
+
+	@media (max-width:540px)
+		{
+		#site h1           {font-size:7.5vw !important}
+		#site :is(h2,h3)   {font-size:6vw !important}
+		#site :is(p,.text) {font-size:4.5vw !important}
+		#site .note        {font-size:3.375vw !important}
+		#site .scale       {width:78.1% !important}
+		}
+
+	#site .distant     {transform:matrix3d(751,0,0,0,0,751,0,0,0,0,1,0,0,0,-750,1)}
+	#site .far         {transform:matrix3d(751,0,0,0,0,751,0,0,0,0,1,0,0,1000,-750,1)}
+	#site .neighboring {transform:matrix3d(501,0,0,0,0,501,0,0,0,0,1,0,0,1000,-500,1)}
+	#site .near        {transform:matrix3d(251,0,0,0,0,251,0,0,0,0,1,0,0,1000,-250,1)}
+	#site .this        {transform:matrix3d(101,0,0,0,0,101,0,0,0,0,1,0,0,0,-100,1)}
+
+	@media (max-width:156vh)
+		{
+		#site .stellar     {left:-48.141025641025641025641025641026vw !important;
+		                   top:calc(18.910256410256410256410256410256vw - 25vh) !important;
+		                   width:26.923076923076923076923076923077vw !important}
+		#site .planetary   {right:78.846153846153846153846153846154vw !important;
+		                   top:calc(-5.3846153846153846153846153846154vw - 25vh) !important;
+		                   width:4.1666666666666666666666666666667vw !important}
+		#site .solar       {right:54.00641025641025641025641025641vw !important;
+		                   top:calc(-6.025641025641025641025641025641vw - 25vh) !important;
+		                   width:26.282051282051282051282051282051vw !important}
+		#site .lunar       {right:69.871794871794871794871794871795vw !important;
+		                   top:calc(2.3076923076923076923076923076923vw - 25vh) !important;
+		                   width:17.307692307692307692307692307692vw !important}
+		#site .terrestrial {right:75.641025641025641025641025641026vw !important;
+		                   top:calc(-3.4615384615384615384615384615385vw - 25vh) !important;
+		                   width:41.666666666666666666666666666667vw !important}
+		}
+
+	@media (min-width:156vh) and (max-width:211vh)
+		{
+		#site .stellar     {left:calc(2.9vh - 50vw) !important;
+		                   top:4.5vh !important;
+		                   width:42vh !important}
+		#site .planetary   {right:calc(45vh + 50vw) !important;
+		                   top:-33.4vh !important;
+		                   width:6.5vh !important}
+		#site .solar       {right:calc(6.25vh + 50vw) !important;
+		                   top:-34.4vh !important;
+		                   width:41vh !important}
+		#site .lunar       {right:calc(31vh + 50vw) !important;
+		                   top:-21.4vh !important;
+		                   width:27vh !important}
+		#site .terrestrial {right:calc(40vh + 50vw) !important;
+		                   top:-30.4vh !important;
+		                   width:65vh !important}
+		}
+
+	@media (min-width:211vh)
+		{
+		#site .stellar     {left:-48.625592417061611374407582938389vw !important;
+		                   top:calc(-19.90521327014218009478672985782vw + 46.5vh) !important;
+		                   width:19.90521327014218009478672985782vw !important}
+		#site .planetary   {right:71.327014218009478672985781990521vw !important;
+		                   top:calc(-32.227488151658767772511848341232vw + 34.6vh) !important;
+		                   width:3.0805687203791469194312796208531vw !important}
+		#site .solar       {right:52.962085308056872037914691943128vw !important;
+		                   top:calc(-32.701421800947867298578199052133vw + 34.6vh) !important;
+		                   width:19.431279620853080568720379146919vw !important}
+		#site .lunar       {right:64.691943127962085308056872037915vw !important;
+		                   top:calc(-26.540284360189573459715639810427vw + 34.6vh) !important;
+		                   width:12.796208530805687203791469194313vw !important}
+		#site .terrestrial {right:68.957345971563981042654028436019vw !important;
+		                   top:calc(-30.805687203791469194312796208531vw + 34.6vh) !important;
+		                   width:30.805687203791469194312796208531vw !important}
+		}
+	}
+
+@media print
+	{
+	#home, #screen
+		{overflow-x:visible !important}
+
+	#screen
+		{
+		position:static !important;
+		overflow-y:visible !important;
+		}
+
+	#site h1           {font-size:4.5vw !important}
+	#site :is(h2,h3)   {font-size:3.6vw !important}
+	#site :is(p,.text) {font-size:2.7vw !important}
+	#site .note        {font-size:2.025vw !important}
+
+	#site iframe       {visibility:hidden !important}
+	#site .cover       {visibility:visible !important}
+
+	@media (min-width:541px) and (max-width:1904px)
+		{#site .scale {width:calc(205.74px + 40%) !important}}
+	@media (max-width:540px)
+		{#site .scale {width:78.1% !important}}
+
+	@media (max-width:156vh)
+		{
+		#site .stellar     {left:1.858974358974358974358974358974vw !important;
+		                   top:34.935897435897435897435897435897vw !important;
+		                   width:26.923076923076923076923076923077vw !important}
+		#site .planetary   {right:28.846153846153846153846153846154vw !important;
+		                   top:10.641025641025641025641025641026vw !important;
+		                   width:4.1666666666666666666666666666667vw !important}
+		#site .solar       {right:4.00641025641025641025641025641vw !important;
+		                   top:10vw !important;
+		                   width:26.282051282051282051282051282051vw !important}
+		#site .lunar       {right:19.871794871794871794871794871795vw !important;
+		                   top:18.333333333333333333333333333333vw !important;
+		                   width:17.307692307692307692307692307692vw !important}
+		#site .terrestrial {right:25.641025641025641025641025641026vw !important;
+		                   top:12.564102564102564102564102564103vw !important;
+		                   width:41.666666666666666666666666666667vw !important}
+		}
+
+	@media (min-width:156vh) and (max-width:211vh)
+		{
+		#site .stellar     {left:2.9vh !important;
+		                   top:54.5vh !important;
+		                   width:42vh !important}
+		#site .planetary   {right:45vh !important;
+		                   top:16.6vh !important;
+		                   width:6.5vh !important}
+		#site .solar       {right:6.25vh !important;
+		                   top:15.6vh !important;
+		                   width:41vh !important}
+		#site .lunar       {right:31vh !important;
+		                   top:28.6vh !important;
+		                   width:27vh !important}
+		#site .terrestrial {right:40vh !important;
+		                   top:19.6vh !important;
+		                   width:65vh !important}
+		}
+
+	@media (min-width:211vh)
+		{
+		#site .stellar     {left:1.374407582938388625592417061611vw !important;
+		                   top:calc(-19.90521327014218009478672985782vw - 3.5vh) !important;
+		                   width:19.90521327014218009478672985782vw !important}
+		#site .planetary   {right:21.327014218009478672985781990521vw !important;
+		                   top:calc(-32.227488151658767772511848341232vw - 15.4vh) !important;
+		                   width:3.0805687203791469194312796208531vw !important}
+		#site .solar       {right:2.962085308056872037914691943128vw !important;
+		                   top:calc(-32.701421800947867298578199052133vw - 15.4vh) !important;
+		                   width:19.431279620853080568720379146919vw !important}
+		#site .lunar       {right:14.691943127962085308056872037915vw !important;
+		                   top:calc(-26.540284360189573459715639810427vw - 15.4vh) !important;
+		                   width:12.796208530805687203791469194313vw !important}
+		#site .terrestrial {right:18.957345971563981042654028436019vw !important;
+		                   top:calc(-30.805687203791469194312796208531vw - 15.4vh) !important;
+		                   width:30.805687203791469194312796208531vw !important}
+		}
+	}
