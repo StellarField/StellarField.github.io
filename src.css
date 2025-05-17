@@ -1,0 +1,92 @@
+#site,#site #screen,#site #screen #page
+	{display:block!important;
+	margin:0!important;
+	width:100%!important;
+	height:100vh!important}
+
+#site,#site #screen
+	{position:relative!important;
+	color-scheme:only light!important;
+	background-color:transparent!important;
+	filter:none!important}
+
+#site,#site #screen #page{background-image:none!important}
+
+#site
+	{overflow:hidden!important;
+	border:0 solid white!important;
+	box-shadow:0 0 white!important}
+
+#site #screen
+	{background-image:url("assets/space/space.webp")!important;
+	background-repeat:repeat!important;
+	background-position:top center!important}
+
+#site #screen #page{position:absolute!important}
+
+#site #screen *
+	{color-scheme:only light!important;
+	background-color:transparent!important}
+
+#site #screen *{filter:none!important}
+#site #screen ::selection{color:black!important}
+
+#site #screen :is(h1,h2,h3,p,em,a,nav,ul,li){position:relative!important}
+#site #screen :is(h1,h2,h3,p,nav,header,section){display:block!important}
+#site #screen li{display:inline-block!important}
+
+#site #screen h1
+	{font-size:2rem!important;
+	margin:2% auto 0!important}
+
+#site #screen :is(h2,p,a){font-size:1rem!important}
+#site #screen a:is(:link,:visited,li::before){color:white!important}
+#site #screen a:active{color:red!important}
+#site #screen a:not(hover){text-decoration:none!important}
+#site #screen a:hover{text-decoration:underline!important}
+
+#site #screen :is(h1,h2,p,em,a)
+	{font-family:cambria!important;
+	line-height:2!important;
+	color:transparent!important}
+
+#site #screen :is(h2,p)
+	{text-align:justify!important;
+	text-justify:inter-word!important;
+	padding-left:2em!important;
+	text-indent:-2em!important}
+
+#site #screen nav
+	{margin:0 auto 2%!important;
+	padding:0 2%!important}
+
+#site #screen :is(h1,nav){text-align:center!important}
+#site #screen h2{margin:1% 2%!important}
+#site #screen p{margin:0 2%!important}
+#site #screen :is(ul,li){padding:0 1em 0 0!important}
+
+#site #screen li::before
+	{content:"\2022"!important;
+	color:transparent!important;
+	padding:0 1em 0 0!important}
+
+#site #screen :is(p,em)
+	{text-shadow:0 0 white,0 0 .16em red,0 0 .16em red,0 0 .16em red,0 0 .16em red,0 0 .16em red,0 0 .16em red,0 0 .16em red,0 0 .16em red!important}
+
+#site #screen :is(h1,a),#site #screen li::before
+	{text-shadow:0 0 0.08em white,0 0 0.08em white,0 0 0.08em white,0 0 0.08em white,0 0 0.16em black,0 0 0.16em black,0 0 0.16em black,0 0 0.16em black!important}
+
+#site #screen h2
+	{text-shadow:0 0 white,0 0 .16em blue,0 0 .16em blue,0 0 .16em blue,0 0 .16em blue,0 0 .16em blue,0 0 .16em blue,0 0 .16em blue,0 0 .16em blue!important}
+
+#site #screen :is(p,em)::selection
+	{text-shadow:0 0 black,0 0 .16em red,0 0 .16em red,0 0 .16em red,0 0 .16em red,0 0 .16em red,0 0 .16em red,0 0 .16em red,0 0 .16em red!important}
+
+#site #screen :is(h1,a)::selection
+	{text-shadow:0 0 black,0 0 0.08em white,0 0 0.08em white,0 0 0.08em white,0 0 0.08em white,0 0 0.16em black,0 0 0.16em black,0 0 0.16em black,0 0 0.16em black!important}
+
+#site #screen h2::selection
+	{text-shadow:0 0 black,0 0 .16em blue,0 0 .16em blue,0 0 .16em blue,0 0 .16em blue,0 0 .16em blue,0 0 .16em blue,0 0 .16em blue,0 0 .16em blue!important}
+
+@media screen{#site #screen{overflow-x:hidden!important;overflow-y:auto!important}}
+@media print{#site #screen{overflow:visible!important}}

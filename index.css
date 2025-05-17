@@ -1,0 +1,329 @@
+#site,#site #screen,#site #screen #page
+	{display:block!important;
+	margin:0!important;
+	width:100%!important}
+
+#site,#site #screen
+	{color-scheme:only light!important;
+	background-color:transparent!important;
+	filter:none!important;
+	background-image:url("assets/space/space.webp")!important;
+	background-repeat:repeat!important;
+	background-position:top center!important}
+
+#site
+	{position:relative!important;
+	overflow:hidden!important;
+	border:0 solid white!important;
+	box-shadow:0 0 white!important}
+
+#site #screen #page
+	{overflow:visible!important;
+	background-image:none!important;
+	position:absolute!important;
+	top:0!important;
+	left:0!important}
+
+#site #screen *
+	{color-scheme:only light!important;
+	background-color:transparent!important}
+
+#site #screen :not(iframe,.glow,.lit){filter:none!important}
+#site #screen ::selection{color:black!important}
+
+#site #screen :is(h1,h2,h3,p,span,em,sup,.outline,.lit,.mini,.glow,.scene){position:relative!important}
+#site #screen :is(iframe,.framed,.form,.react,.shape){position:absolute!important}
+#site #screen :is(h1,h2,h3,p,header,section,.frame,.still,.over,.space,.view,.form,.react,.shape){display:block!important}
+#site #screen .hidden{display:none!important}
+
+#site #screen :is(span,em,a,sup):not(.frame,.space)
+	{font-family:cambria!important;
+	line-height:2!important}
+
+#site #screen :is(h1,h2,h3) span{font-size:2.25rem!important}
+#site #screen :is(p span,em,.outline):not(.frame,.space,.note){font-size:1.5rem!important}
+#site #screen .note{font-size:1rem!important}
+#site #screen :is(span,em):not(.frame,.space){color:transparent!important}
+#site #screen :is(h1 span,h2 span,h3 span,.outline){font-weight:bold!important}
+#site #screen .outline:link{color:blue!important}
+#site #screen .outline:visited{color:#bf00ff!important}
+#site #screen .outline:active{color:white!important}
+#site #screen .outline:not(hover){text-decoration:none!important}
+#site #screen .outline:hover{text-decoration:underline!important}
+#site #screen .break{overflow-wrap:break-word!important}
+
+#site #screen :is(iframe,img,.frame,.boundary){break-inside:avoid!important}
+#site #screen :is(img,.mass,.react,.view){vertical-align:top!important}
+#site #screen .in{text-indent:2em!important}
+#site #screen :is(.left,.boundary){text-indent:0!important}
+#site #screen :is(h1,h2,h3,.mid,.boundary,.react){text-align:center!important}
+#site #screen :is(.react,.shape){width:auto!important}
+#site #screen .view{height:auto!important}
+#site #screen iframe{top:12px!important;left:12px!important}
+#site #screen .mass{aspect-ratio:1!important}
+#site #screen :is(.hidden,.frame:not(hover) .over){visibility:hidden!important}
+#site #screen .frame:hover .over{visibility:visible!important}
+#site #screen .boundary{padding:10px 0!important}
+
+#site #screen :is(iframe,.hd){aspect-ratio:16/9!important}
+#site #screen .kool{aspect-ratio:134/128!important}
+#site #screen .letter{aspect-ratio:11/8.5!important}
+#site #screen .theme{aspect-ratio:1983/1080!important}
+#site #screen .butters{aspect-ratio:857/1080!important}
+#site #screen .gobbler{aspect-ratio:1019/1080!important}
+#site #screen .little{aspect-ratio:908/1080!important}
+#site #screen .wink{aspect-ratio:1106/1080!important}
+#site #screen :is(.brightest,.cursor){aspect-ratio:1!important}
+#site #screen :is(.kool,.brightest){width:3rem!important}
+#site #screen .cursor{width:2rem!important}
+
+#site #screen .frame
+	{padding:12px 12px 12px 12px!important;
+	border-radius:12px!important}
+
+#site #screen :is(iframe,.framed)
+	{width:calc(100% - 24px)!important;
+	height:calc(100% - 24px)!important}
+
+#site #screen .frame
+	{margin-left:auto!important;
+	margin-right:auto!important}
+
+#site #screen :is(.in,.left)
+	{margin-left:2%!important;
+	margin-right:2%!important;
+	text-align:justify!important;
+	text-justify:inter-word!important}
+
+#site #screen .top
+	{margin-top:2%!important;
+	margin-bottom:0!important}
+
+#site #screen .center
+	{margin-top:0!important;
+	margin-bottom:0!important}
+
+#site #screen .bottom
+	{margin-top:0!important;
+	margin-bottom:2%!important}
+
+#site #screen :is(h1,h2,h3,p):not(.top,.center,.bottom)
+	{margin-top:2%!important;
+	margin-bottom:2%!important}
+
+#site #screen .glow:not(hover),#site #screen :is(.react:not(hover)+.lit,.react:not(hover)+picture .lit)
+	{filter:drop-shadow(0 0 5px white)!important}
+
+#site #screen .glow:hover,#site #screen :is(.react:hover+.lit,.react:hover+picture .lit)
+	{filter:drop-shadow(0 0 10px white)!important}
+
+#site #screen :is(h3,p) :is(span,em):not(.frame,.space)
+	{text-shadow:0 0 white,0 0 .16em red,0 0 .16em red,0 0 .16em red,0 0 .16em red,0 0 .16em red,0 0 .16em red,0 0 .16em red,0 0 .16em red!important}
+
+#site #screen h1 span
+	{text-shadow:0 0 .08em white,0 0 .08em white,0 0 .08em white,0 0 .08em white,0 0 .16em black,0 0 .16em black,0 0 .16em black,0 0 .16em black!important}
+
+#site #screen h2 span
+	{text-shadow:0 0 white,0 0 .16em blue,0 0 .16em blue,0 0 .16em blue,0 0 .16em blue,0 0 .16em blue,0 0 .16em blue,0 0 .16em blue,0 0 .16em blue!important}
+
+#site #screen :is(h3,p) :is(span,em):not(.frame,.space)::selection
+	{text-shadow:0 0 black,0 0 .16em red,0 0 .16em red,0 0 .16em red,0 0 .16em red,0 0 .16em red,0 0 .16em red,0 0 .16em red,0 0 .16em red!important}
+
+#site #screen h1 span::selection
+	{text-shadow:0 0 black,0 0 .08em white,0 0 .08em white,0 0 .08em white,0 0 .08em white,0 0 .16em black,0 0 .16em black,0 0 .16em black,0 0 .16em black!important}
+
+#site #screen h2 span::selection
+	{text-shadow:0 0 black,0 0 .16em blue,0 0 .16em blue,0 0 .16em blue,0 0 .16em blue,0 0 .16em blue,0 0 .16em blue,0 0 .16em blue,0 0 .16em blue!important}
+
+#site #screen .outline,#site #screen .outline::selection
+	{text-shadow:.082em 0 white,.079em .021em white,.071em .041em white,.058em .058em white,.041em .071em white,.021em .079em white,0 .082em white,-.021em .079em white,-.041em .071em white,-.058em .058em white,-.071em .041em white,-.079em .021em white,-.082em 0 white,-.079em -.021em white,-.071em -.041em white,-.058em -.058em white,-.041em -.071em white,-.021em -.079em white,0 -.082em white,.021em -.079em white,.041em -.071em white,.058em -.058em white,.071em -.041em white,.079em -.021em white!important}
+
+#site #screen .red .framed:not(hover)
+	{border:3px solid red!important;
+	margin:-3px!important}
+
+#site #screen .blue :is(iframe,.framed):not(hover)
+	{border:3px solid blue!important;
+	margin:-3px!important}
+
+#site #screen .red .framed:hover
+	{border:3px solid #ff5f5f!important;
+	margin:-3px!important}
+
+#site #screen .blue :is(iframe,.framed):hover
+	{border:3px solid #007fff!important;
+	margin:-3px!important}
+
+#site #screen .red
+	{border:3px solid red!important;
+	outline:3px solid white!important;
+	box-shadow:6px 0 red,5.79px 1.55px red,5.19px 3px red,4.24px 4.24px red,3px 5.19px red,1.55px 5.79px red,0 6px red,-1.55px 5.79px red,-3px 5.19px red,-4.24px 4.24px red,-5.19px 3px red,-5.79px 1.55px red,-6px 0 red,-5.79px -1.55px red,-5.19px -3px red,-4.24px -4.24px red,-3px -5.19px red,-1.55px -5.79px red,0 -6px red,1.55px -5.79px red,3px -5.19px red,4.24px -4.24px red,5.19px -3px red,5.79px -1.55px red!important}
+
+#site #screen .blue
+	{border:3px solid blue!important;
+	outline:3px solid white!important;
+	box-shadow:6px 0 blue,5.79px 1.55px blue,5.19px 3px blue,4.24px 4.24px blue,3px 5.19px blue,1.55px 5.79px blue,0 6px blue,-1.55px 5.79px blue,-3px 5.19px blue,-4.24px 4.24px blue,-5.19px 3px blue,-5.79px 1.55px blue,-6px 0 blue,-5.79px -1.55px blue,-5.19px -3px blue,-4.24px -4.24px blue,-3px -5.19px blue,-1.55px -5.79px blue,0 -6px blue,1.55px -5.79px blue,3px -5.19px blue,4.24px -4.24px blue,5.19px -3px blue,5.79px -1.55px blue!important}
+
+#site #screen .view{z-index:1!important}
+#site #screen :is(span,em,.framed,.outline,.mini,.glow):not(.frame,.space){z-index:2!important}
+#site #screen iframe{z-index:3!important}
+#site #screen .react{z-index:4!important}
+
+@media screen
+	{
+	#site,#site #screen,#site #screen #page{height:100vh!important}
+
+	#site #screen .space{transform-style:preserve-3d!important}
+	#site #screen .stellar.view:not(hover)~.space .spark{visibility:hidden!important}
+	#site #screen .solar.view:not(hover)~.space .flare{visibility:hidden!important}
+	#site #screen .stellar.view:hover~.space .spark{visibility:visible!important}
+	#site #screen .solar.view:hover~.space .flare{visibility:visible!important}
+
+	#site #screen .boundary
+		{margin:auto!important;
+		width:fit-content!important}
+
+	#site #screen
+		{overflow-x:hidden!important;
+		overflow-y:auto!important;
+		perspective:1px!important;
+		perspective-origin:bottom center!important}
+
+	#site #screen :is(.mass,.view)
+		{position:relative!important;
+		transform-origin:50vw 50vh!important;
+		will-change:transform!important}
+
+	#site #screen :is(iframe,.mass):not(.hidden)
+		{display:block!important;
+		visibility:visible!important}
+
+	#site #screen :is(.cover,.scene)
+		{display:none!important;
+		visibility:hidden!important}
+
+	@media (min-width:1921px)
+		{
+		#site #screen .frame{width:calc(50vw - 42px)!important}
+		#site #screen :is(.react,.shape,.lit){height:28.125vw!important}
+		}
+
+	@media (min-width:641px) and (max-width:1920px)
+		{
+		#site #screen .frame{width:calc(35vw + 246px)!important}
+		#site #screen :is(.react,.shape,.lit){height:calc(19.6875vw + 162px)!important}
+		}
+
+	@media (max-width:640px)
+		{
+		#site #screen .frame{width:calc(80vw - 42px)!important}
+		#site #screen :is(.react,.shape,.lit){height:45vw!important}
+		}
+
+	@media (max-aspect-ratio:156/100)
+		{
+		#site #screen .stellar
+			{transform:scale(751) translate3d(3.07692vw,calc(19.48717vw - 25vh),-750px)!important;
+			width:25.57692vw!important}
+
+		#site #screen .planetary
+			{transform:scale(501) translate3d(65.86538vw,calc(-5.41666vw - 25vh),-500px)!important;
+			width:4.16666vw!important}
+
+		#site #screen .solar
+			{transform:scale(751) translate3d(68.17307vw,calc(-7.59615vw - 25vh),-750px)!important;
+			width:29.29487vw!important}
+
+		#site #screen .lunar
+			{transform:scale(251) translate3d(61.37820vw,calc(2.24358vw - 25vh),-250px)!important;
+			width:17.30769vw!important}
+
+		#site #screen .terrestrial
+			{transform:scale(101) translate3d(30.76923vw,calc(-3.84615vw - 25vh),-100px)!important;
+			width:41.66666vw!important}
+		}
+
+	@media (min-aspect-ratio:156/100) and (max-aspect-ratio:211/100)
+		{
+		#site #screen .stellar
+			{transform:scale(751) translate3d(4.8vh,5.4vh,-750px)!important;
+			width:39.9vh!important}
+
+		#site #screen .planetary
+			{transform:scale(501) translate3d(calc(100vw - 53.25vh),-33.45vh,-500px)!important;
+			width:6.5vh!important}
+
+		#site #screen .solar
+			{transform:scale(751) translate3d(calc(100vw - 49.65vh),-36.85vh,-750px)!important;
+			width:45.7vh!important}
+
+		#site #screen .lunar
+			{transform:scale(251) translate3d(calc(100vw - 60.25vh),-21.5vh,-250px)!important;
+			width:27vh!important}
+
+		#site #screen .terrestrial
+			{transform:scale(101) translate3d(calc(100vw - 108vh),-31vh,-100px)!important;
+			width:65vh!important}
+		}
+
+	@media (min-aspect-ratio:211/100)
+		{
+		#site #screen .stellar
+			{transform:scale(751) translate3d(2.27488vw,calc(45.3vh - 18.90995vw),-750px)!important;
+			width:18.90995vw!important}
+
+		#site #screen .planetary
+			{transform:scale(501) translate3d(74.76303vw,calc(34vh - 31.96682vw),-500px)!important;
+			width:3.08056vw!important}
+
+		#site #screen .solar
+			{transform:scale(751) translate3d(76.46919vw,calc(34vh - 33.57819vw),-750px)!important;
+			width:21.65876vw!important}
+
+		#site #screen .lunar
+			{transform:scale(251) translate3d(71.44549vw,calc(34vh - 26.30331vw),-250px)!important;
+			width:12.79620vw!important}
+
+		#site #screen .terrestrial
+			{transform:scale(101) translate3d(48.81516vw,calc(34vh - 30.80568vw),-100px)!important;
+			width:30.80568vw!important}
+		}
+	}
+
+@media print
+	{
+	#site,#site #screen,#site #screen #page{height:100%!important}
+	#site #screen{overflow:visible!important}
+	#site #screen :is(.mass,.view){position:absolute!important}
+
+	#site #screen .boundary
+		{margin:0!important;
+		width:100%!important}
+
+	#site #screen .letter{width:calc(80% - 42px)!important}
+	#site #screen .hd{width:calc(80% - 42px)!important}
+	#site #screen .theme{width:82.625%!important}
+	#site #screen .butters{width:35.70834%!important}
+	#site #screen .gobbler{width:42.45834%!important}
+	#site #screen .little{width:37.83333%!important}
+	#site #screen .wink{width:46.08333%!important}
+
+	#site #screen .space
+		{height:100%!important;
+		width:100%!important}
+
+	#site #screen .scene
+		{margin:auto!important;
+		aspect-ratio:1311/731!important;
+		width:85%!important;
+		top:50%!important;
+		transform:translateY(-50%)!important}
+
+	#site #screen :is(iframe,.mass):not(.hidden)
+		{display:none!important;
+		visibility:hidden!important}
+
+	#site #screen :is(.cover,.scene)
+		{display:block!important;
+		visibility:visible!important}
+	}
