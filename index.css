@@ -33,7 +33,7 @@
 
 #site #screen :is(h1,h2,h3,p,span,em,sup,.outline,.lit,.mini,.glow,.scene){position:relative!important}
 #site #screen :is(iframe,.framed,.form,.react,.shape){position:absolute!important}
-#site #screen :is(h1,h2,h3,p,header,section,.frame,.still,.over,.space,.view,.form,.react,.shape){display:block!important}
+#site #screen :is(h1,h2,h3,p,header,section,.frame,.framed,.space,.view,.form,.react,.shape){display:block!important}
 #site #screen .hidden{display:none!important}
 
 #site #screen :is(span,em,a,sup):not(.frame,.space)
@@ -79,16 +79,15 @@
 #site #screen .cursor{width:2rem!important}
 
 #site #screen .frame
-	{padding:12px 12px 12px 12px!important;
-	border-radius:12px!important}
+	{margin-left:auto!important;
+	margin-right:auto!important;
+	padding:12px 12px 12px 12px!important;
+	border-radius:12px!important
+	}
 
 #site #screen :is(iframe,.framed)
 	{width:calc(100% - 24px)!important;
 	height:calc(100% - 24px)!important}
-
-#site #screen .frame
-	{margin-left:auto!important;
-	margin-right:auto!important}
 
 #site #screen :is(.in,.left)
 	{margin-left:2%!important;
