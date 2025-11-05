@@ -118,7 +118,7 @@
 #site #screen .glow:hover,#site #screen :is(.react:hover+.lit,.react:hover+picture .lit)
 	{filter:drop-shadow(0 0 10px white)!important}
 
-#site #screen :is(h3,p) :is(span,em):not(.frame,.space,.new)
+#site #screen :is(h3,p) :is(span,em):not(.frame,.space)
 	{text-shadow:0 0 white,0 0 .16em red,0 0 .16em red,0 0 .16em red,0 0 .16em red,0 0 .16em red,0 0 .16em red,0 0 .16em red,0 0 .16em red!important}
 
 #site #screen h1 span
@@ -127,7 +127,7 @@
 #site #screen h2 span
 	{text-shadow:0 0 white,0 0 .16em blue,0 0 .16em blue,0 0 .16em blue,0 0 .16em blue,0 0 .16em blue,0 0 .16em blue,0 0 .16em blue,0 0 .16em blue!important}
 
-#site #screen :is(h3,p) :is(span,em):not(.frame,.space,.new)::selection
+#site #screen :is(h3,p) :is(span,em):not(.frame,.space)::selection
 	{text-shadow:0 0 black,0 0 .16em red,0 0 .16em red,0 0 .16em red,0 0 .16em red,0 0 .16em red,0 0 .16em red,0 0 .16em red,0 0 .16em red!important}
 
 #site #screen h1 span::selection
@@ -138,8 +138,6 @@
 
 #site #screen .outline,#site #screen .outline::selection
 	{text-shadow:.082em 0 white,.079em .021em white,.071em .041em white,.058em .058em white,.041em .071em white,.021em .079em white,0 .082em white,-.021em .079em white,-.041em .071em white,-.058em .058em white,-.071em .041em white,-.079em .021em white,-.082em 0 white,-.079em -.021em white,-.071em -.041em white,-.058em -.058em white,-.041em -.071em white,-.021em -.079em white,0 -.082em white,.021em -.079em white,.041em -.071em white,.058em -.058em white,.071em -.041em white,.079em -.021em white!important}
-#site #screen .new,#site #screen .new::selection
-	{text-shadow:.082em 0 red,.079em .021em red,.071em .041em red,.058em .058em red,.041em .071em red,.021em .079em red,0 .082em red,-.021em .079em red,-.041em .071em red,-.058em .058em red,-.071em .041em red,-.079em .021em red,-.082em 0 red,-.079em -.021em red,-.071em -.041em red,-.058em -.058em red,-.041em -.071em red,-.021em -.079em red,0 -.082em red,.021em -.079em red,.041em -.071em red,.058em -.058em red,.071em -.041em red,.079em -.021em red!important}
 
 #site #screen .red .framed:not(hover)
 	{border:3px solid red!important;
